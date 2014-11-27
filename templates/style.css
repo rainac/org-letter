@@ -1,0 +1,45 @@
+table, td, th { font-size: inherit; }
+table { border-collapse: collapse; }
+body { 
+    width: 190.9mm;
+    height: 274.77mm;
+    max-height: 294mm;
+    font-family: droid sans; 
+    font-color: black; 
+    font-size: 10pt; 
+    padding: 0px;
+    margin: 0px;
+}
+div.main {
+    padding: 0px;
+    margin: 1cm 1.7cm 5mm 2.2cm;
+}
+h1 {                   font-size: 100%; }
+h2 {                   font-size: 100%; }
+h3 {                   font-size: 100%; }
+h4 {                   font-size: 100%; }
+h5 {                   font-size: 100%; }
+.address { float: right; padding-bottom: 2cm;  }
+.preis { text-align: right }
+.steuer { text-align: right }
+.posten td { padding: 0px 1em 0px 1em; }
+.posten th { padding: 0px 1em 0px 1em; }
+.title {                   color: #1010a0; }
+.name { font-weight: bold; color: #1010a0; }
+.slogan { font-weight: bold; color: #1010a0; }
+address { font-weight: bold; font-style: normal; }
+.footer address { font-weight: normal;  }
+.address address { }
+.to address {  }
+.lbody { clear: right; }
+.to { clear: right; padding-bottom: 2cm; }
+.closing { padding-bottom: 2cm;  }
+.footer table { padding: 0; margin: 0; width: 100%; }
+div {margin: 0px; padding: 0px;}
+.footer td { font-size: 60%; vertical-align: top; margin: 0px; padding: 0 0.4cm 0 0; }
+.footer td { text-align: right; }
+hr { border: 0px; border-top: 1px solid #1010a0; padding: 0px; margin: 0px; }
+a { text-decoration: none; color: inherit; }
+.v-spacer { padding-top: 4em; }
+pre { font: inherit; padding: 0em; margin: 0em; }
+.date-header { text-align: right; width: 100%; }

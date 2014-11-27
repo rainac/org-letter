@@ -1,0 +1,38 @@
+
+# update this timestamp with C-c . or delete and create a new one with C-c .
+<2014-11-27 Do>
+
+# this should be present so that the address drawer below is
+# recognized
+#+DRAWERS: address
+
+# set the name of the HTML template here
+#+TEMPLATE: example1.html
+
+# the recipient's name
+#+to: Example Recipient
+
+# the recipient's address
+:address:
+11 Example Lane
+23232 Frankfurt
+Germany
+:END:
+
+# the place name
+#+place: Extown
+
+# the letter's title
+#+title: Answering your request
+
+# letter text
+# you can currently use headings and lists for structuring
+
+Dear Sir or Madam,
+
+regarding your letter from ...
+
+I would like to add...
+
+Yours sincerely
+Edward
