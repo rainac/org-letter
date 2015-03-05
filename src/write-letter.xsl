@@ -94,6 +94,19 @@ Copryright (C) 2014 Johannes Willkomm
     </pre>
   </xsl:template>
 
+  <xsl:template match="link">
+    <a href="{@raw-link}">
+      <xsl:choose>
+        <xsl:when test="normalize-space()">
+          <xsl:apply-templates/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="@raw-link"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </a>
+  </xsl:template>
+
   <xsl:template match="text()" mode="pre"/>
   <xsl:template match="paragraph" mode="pre">
     <xsl:value-of select="substring-after(., '&#xa;')"/>
