@@ -5,7 +5,7 @@ set -x
 in=$1
 out=$(dirname $in)/$(basename $in .org).html
                         
-ORGLETTER_HOME=${ORGLETTER_HOME:-$PWD}
+ORGLETTER_HOME=${ORGLETTER_HOME:-$(readlink -f $(dirname $BASH_SOURCE)/..)}
 ORGLETTER_TEMPLATES=${ORGLETTER_TEMPLATES:-$HOME/.org-letter}
                         
 xml=$in.xml
