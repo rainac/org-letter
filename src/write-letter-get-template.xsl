@@ -13,7 +13,7 @@ Copryright (C) 2014 Johannes Willkomm
   <xsl:output method="text"/>
 
   <xsl:template match="/">
-    <xsl:value-of select="//keyword[@key = 'TEMPLATE'][last()]/@value"/>
+    <xsl:value-of select="//keyword[@key = 'TEMPLATE'][last()]/value"/>
   </xsl:template>
 
 </xsl:stylesheet>

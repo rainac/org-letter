@@ -29,7 +29,7 @@ Copryright (C) 2014 Johannes Willkomm
   </xsl:template>
 
   <xsl:template match="xhtml:*[@org-keyword]">
-    <xsl:value-of select="$data//keyword[@key = current()/@org-keyword]/@value"/>
+    <xsl:value-of select="$data//keyword[@key = current()/@org-keyword]/value"/>
   </xsl:template>
 
   <xsl:template match="xhtml:*[@org-drawer]">
@@ -52,6 +52,8 @@ Copryright (C) 2014 Johannes Willkomm
   <xsl:template match="org-data">
     <xsl:apply-templates/>
   </xsl:template>
+
+  <xsl:template match="keyword"/>
 
   <xsl:template match="headline">
     <xsl:element name="h{@level}"><xsl:value-of select="@raw-value"/></xsl:element>
@@ -109,7 +111,7 @@ Copryright (C) 2014 Johannes Willkomm
 
   <xsl:template match="text()" mode="pre"/>
   <xsl:template match="paragraph" mode="pre">
-    <xsl:value-of select="substring-after(., '&#xa;')"/>
+    <xsl:value-of select="."/>
   </xsl:template>
 
 </xsl:stylesheet>
