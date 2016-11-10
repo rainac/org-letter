@@ -10,7 +10,7 @@ ORGLETTER_TEMPLATES=${ORGLETTER_TEMPLATES:-$HOME/.org-letter}
                         
 xml=$in.xml
 
-org-to-xml.sh $in > $xml
+org-to-xml.sh -o $xml $in
 
 template=$(xsltproc -o - --path $ORGLETTER_HOME/src write-letter-get-template.xsl $PWD/$in.xml)
 
